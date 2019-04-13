@@ -2,8 +2,8 @@
 //  SuperHeros.swift
 //  superheroesandlaureates
 //
-//  Created by Student on 4/13/19.
-//  Copyright © 2019 Student. All rights reserved.
+//  Created by Peddi Taraka Raviteja on 4/13/19.
+//  Copyright © 2019 Peddi Taraka Raviteja. All rights reserved.
 //
 
 import Foundation
@@ -14,7 +14,7 @@ class SuperHeros{
     func fetchSuperHero() -> Void {
         guard let url = Bundle.main.url(forResource: "squad", withExtension: "json")
             else{
-                print("No File")
+                print("No File Found")
                 return
         }
         let urlSession = URLSession.shared

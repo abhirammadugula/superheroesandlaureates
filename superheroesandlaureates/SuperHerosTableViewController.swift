@@ -2,15 +2,15 @@
 //  SuperHerosTableViewController.swift
 //  superheroesandlaureates
 //
-//  Created by Student on 4/13/19.
-//  Copyright © 2019 Student. All rights reserved.
+//  Created by Peddi Taraka Raviteja on 4/13/19.
+//  Copyright © 2019 Peddi Taraka Raviteja. All rights reserved.
 //
 
 import UIKit
 
 class SuperHerosTableViewController: UITableViewController {
 
-    var powers : [String] = []
+    var superpowers : [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         SuperHeros.shared.fetchSuperHero()
@@ -31,17 +31,17 @@ class SuperHerosTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "superhero", for: indexPath)
         let heros = SuperHeros.shared[indexPath.row]
-        powers = heros.powers
-        var powerData:String = ""
-        for i in 0..<powers.count{
-            if i == powers.count-1{
-                powerData = powerData + "\(powers[i])"
+        superpowers = heros.powers
+        var Data:String = ""
+        for i in 0..<superpowers.count{
+            if i == superpowers.count-1{
+                Data = Data + "\(superpowers[i])"
             }else{
-                powerData = powerData + "\(powers[i]), "
+                Data = Data + "\(superpowers[i]), "
             }
         }
         cell.textLabel?.text = "\(heros.name) (AKA: \(heros.secretIdentity))"
-        cell.detailTextLabel?.text = powerData
+        cell.detailTextLabel?.text = Data
         return cell
     }
 

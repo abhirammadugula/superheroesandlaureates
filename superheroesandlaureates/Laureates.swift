@@ -2,8 +2,8 @@
 //  Laureates.swift
 //  superheroesandlaureates
 //
-//  Created by Student on 4/13/19.
-//  Copyright © 2019 Student. All rights reserved.
+//  Created by Peddi Taraka Raviteja on 4/13/19.
+//  Copyright © 2019 Peddi Taraka Raviteja. All rights reserved.
 //
 
 import Foundation
