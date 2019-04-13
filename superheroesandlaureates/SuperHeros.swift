@@ -2,8 +2,8 @@
 //  SuperHeros.swift
 //  superheroesandlaureates
 //
-//  Created by Peddi Taraka Raviteja on 4/13/19.
-//  Copyright © 2019 Peddi Taraka Raviteja. All rights reserved.
+//  Created by Abhiram, Madugula on 4/13/19.
+//  Copyright © 2019 Abhiram, Madugula. All rights reserved.
 //
 
 import Foundation
